@@ -52,7 +52,7 @@ function Dashboard() {
 
             const dashboardResponse = await axios.get(
 
-                `http://localhost:8080/dashboard/${user.userId}`
+                `${import.meta.env.VITE_API_BASE_URL}/dashboard/${user.userId}`
 
             );
 
@@ -87,7 +87,7 @@ function Dashboard() {
 
             const response = await axios.get(
 
-                `http://localhost:8080/dashboard/${user.userId}/ai`
+                `${import.meta.env.VITE_API_BASE_URL}/dashboard/${user.userId}/ai`
 
             );
 

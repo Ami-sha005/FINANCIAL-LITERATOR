@@ -46,7 +46,7 @@ const [loading, setLoading] = useState(false);
 
     const response = await axios.post(
 
-      "http://localhost:8080/scheme/find",
+      `${import.meta.env.VITE_API_BASE_URL}/scheme/find`,
 
       payload
 

@@ -99,7 +99,7 @@ function FutureMap() {
 
     const response = await axios.post(
 
-      "http://localhost:8080/futuremap/generate",
+      `${import.meta.env.VITE_API_BASE_URL}/futuremap/generate`,
 
       payload
 

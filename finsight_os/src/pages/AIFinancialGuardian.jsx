@@ -36,7 +36,7 @@ const analyzeWithAI = async () => {
 
     const response = await axios.post(
 
-      "http://localhost:8080/guardian/analyze",
+      `${import.meta.env.VITE_API_BASE_URL}/guardian/analyze`,
 
       payload
     );
@@ -45,7 +45,7 @@ const analyzeWithAI = async () => {
     analyzeGoalRisk();
     const goalResponse = await axios.post(
 
-  "http://localhost:8080/goalrisk/analyze",
+  `${import.meta.env.VITE_API_BASE_URL}/goalrisk/analyze`,
 
   {
     goalName: "Dream Home",
