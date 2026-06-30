@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @RestController
 @RequestMapping("/wealth")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+
 public class WealthTrackerController {
 
     private final WealthTrackerService wealthTrackerService;

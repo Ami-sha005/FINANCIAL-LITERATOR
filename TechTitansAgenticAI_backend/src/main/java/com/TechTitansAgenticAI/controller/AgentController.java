@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/agent")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*")
 public class AgentController {
 
     private final AgentService agentService;
